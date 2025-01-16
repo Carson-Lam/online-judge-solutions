@@ -1,0 +1,50 @@
+/******************************************************************************
+
+Carson Lam
+
+*******************************************************************************/
+
+import java.util.Scanner;
+
+public class TriSquare {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        int rectSize = scan.nextInt();
+        int triSize = (rectSize + 1) / 2;
+
+        for (int i = 1; i <= triSize; i++) {
+            System.out.println();
+            for (int j = i + 1; j <= triSize; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k < 2 * i; k++) {
+                if (i == triSize || (k == 1 || k == 2 * i - 1))
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+        }
+
+        int rectHeight = rectSize - 2;
+        int rectWidth = rectSize;
+
+        for (int i = 1; i <= rectHeight; i++) {
+            System.out.println();
+            for (int j = 1; j <= 1; j++) {
+                System.out.print("*");
+            }
+            for (int k = 1; k <= rectSize - 2; k++) {
+                System.out.print(" ");
+
+            }
+            for (int L = 1; L <= 1; L++) {
+                System.out.print("*");
+            }
+        }
+        System.out.println();
+        for (int B = 0; B < rectWidth; B++) {
+            System.out.print("*");
+        }
+    }
+}
