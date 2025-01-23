@@ -1,6 +1,5 @@
-package EmoryUniv.Probability;
+package EmoryUniv.Probability.DiceRoller;
 import java.util.*;
-import java.lang.*;
 public class DiceRoller {
     public static void main(String[] args) {
         Random rand = new Random();
